@@ -1,0 +1,7 @@
+name: UtilityPlugin
+version: '1.0-ALPHA'
+main: ryanair.utilityPlugin.UtilityPlugin
+api-version: '1.21'
+authors: [ jeremi_lab ]
+description: Utility plugin for minecrow.pl!
+website: minecrow.pl
