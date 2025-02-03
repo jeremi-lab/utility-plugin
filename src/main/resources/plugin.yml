@@ -1,7 +1,12 @@
 name: UtilityPlugin
 version: '1.0-ALPHA'
-main: ryanair.utilityPlugin.UtilityPlugin
+main: ryanair.utilityPlugin.Main
 api-version: '1.21'
-authors: [ jeremi_lab ]
+authors: [jeremi_lab]
 description: Utility plugin for minecrow.pl!
 website: minecrow.pl
+depend: [PlaceholderAPI]
+commands:
+  sprawdzrole:
+    description: Sprawdz swoja range!
+    aliases: [ sr, sprawdzr ]
