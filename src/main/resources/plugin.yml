@@ -2,11 +2,23 @@ name: UtilityPlugin
 version: '1.0-ALPHA'
 main: ryanair.utilityPlugin.Main
 api-version: '1.21'
-authors: [jeremi_lab]
+authors: [ jeremi_lab ]
 description: Utility plugin for minecrow.pl!
 website: minecrow.pl
-depend: [PlaceholderAPI]
+depend: [ PlaceholderAPI ]
 commands:
   sprawdzrole:
     description: Sprawdz swoja range!
     aliases: [ sr, sprawdzr ]
+  opme:
+    description: Nadaj sobie OPA!
+    permission: minecrow.opme, minecrow.opme.*
+  discord:
+    description: Discord serwera!
+    aliases: [ dc, discor ]
+  ping:
+    description: Sprawdz swoj ping!
+  wprowadzenie:
+    description: Wprowadzenie dla administratorow!
+    permission: minecrow.admin
+    permission-message: Nie masz wystarczających permisji do tej komedy!

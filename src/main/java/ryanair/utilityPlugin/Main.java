@@ -15,6 +15,12 @@ public class Main extends JavaPlugin {
         this.loadPlugin();
 
         getCommand("sprawdzrole").setExecutor(new RoleCMD());
+        getCommand("opme").setExecutor(new OpMeCMD());
+        getCommand("discord").setExecutor(new DiscordCMD());
+        getCommand("ping").setExecutor(new PingCMD());
+        getCommand("wprowadzenie").setExecutor(new AdminWprowadzenieCMD());
+
+
 
     }
     private void loadPlugin() {
@@ -23,7 +29,14 @@ public class Main extends JavaPlugin {
                     main.getPluginLoader().disablePlugin(this);
         }
         getLogger().log(Level.INFO, "Plugin MINECROW utils załadowany");
+        if (onCommand(new OpMeCMD())); {
+            getLogger().log(Level.WARNING, "Tried to OP itself - Probowal dac sobie operatora - uwazac na tego gracza!");
+        }
 
+    }
+
+    private boolean onCommand(OpMeCMD opMeCMD) {
+        return false;
     }
 
     @Override
